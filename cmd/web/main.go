@@ -7,7 +7,7 @@ import (
 
 func main() {
 	// Use the http.NewServeMux() function to initialize a new servemux, then
-	//register the home function as the handler for the "/" URL pattern.
+	// register the home function as the handler for the "/" URL pattern.
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", home)
 	mux.HandleFunc("/snippet/view", snippetView)
